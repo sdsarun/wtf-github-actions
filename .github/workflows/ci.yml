@@ -1,0 +1,12 @@
+name: CI
+run-name: Triggerd CI by @${{ github.actor }}
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  quanlity-check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "HELLO WORLD"
